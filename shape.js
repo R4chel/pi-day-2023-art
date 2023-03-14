@@ -14,7 +14,7 @@ function Shape({
         for (let i = 0; i < this.colors.length; i++) {
             fill(this.colors[i]);
 
-            arc(this.x, this.y, this.r, this.r, this.thetas[i], this.thetas[i + 1 % this.thetas.length], PIE);
+            arc(this.x, this.y, this.r, this.r, this.thetas[i], this.thetas[(i + 1) % this.thetas.length], PIE);
 
         }
     }
